@@ -1,0 +1,167 @@
+/* Algemene instellingen */
+body {
+    font-family: Arial, sans-serif; /* Veelgebruikte, veilige font */
+    margin: 0; /* Zorgt dat er geen ongewenste marge rond het body-element staat */
+    padding: 0; /* Zorgt dat er geen extra ruimte ontstaat */
+    color: #333; /* Donkere tekst voor leesbaarheid */
+}
+
+/* Header en navigatie */
+header {
+    background-color: #007bff; /* Blauw zoals vaak gebruikt in moderne designs */
+    padding: 15px; /* Ruimte binnen de header */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtiele schaduw voor een mooi effect */
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Header blijft boven andere content */
+}
+
+nav ul {
+    list-style-type: none; /* Verwijdert standaard bolletjes */
+    display: flex; /* Plaatst de links naast elkaar */
+    justify-content: center; /* Centreert de items in het midden */
+    gap: 20px; /* Voegt ruimte toe tussen items */
+    padding: 0; /* Verwijdert ongewenste ruimte rondom de lijst */
+    margin: 0; /* Verwijdert ongewenste ruimte rondom de lijst */
+}
+
+nav a {
+    text-decoration: none; /* Verwijdert onderstreping */
+    color: white; /* Witte tekst voor contrast */
+    padding: 10px 15px; /* Ruimte binnen de knoppen */
+    font-weight: bold; /* Maakt de tekst sterker */
+    transition: background-color 0.3s; /* Vloeiende overgang bij hover */
+}
+
+nav a:hover {
+    background-color: #0056b3; /* Donkerdere kleur bij hover */
+    border-radius: 5px; /* Afgeronde hoeken */
+}
+
+/* Hero sectie */
+.hero {
+    background: linear-gradient(to right, #007bff, #00c6ff); /* Opvallende gradient */
+    color: white; /* Witte tekst voor contrast */
+    padding: 80px 20px; /* Ruime padding voor speling */
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5em; /* Grotere tekst voor aandacht */
+    margin-bottom: 15px; /* Ruimte onder de titel */
+}
+
+.hero p {
+    font-size: 1.2em; /* Iets grotere tekst voor leesbaarheid */
+    margin-bottom: 20px;
+}
+
+.cta-btn {
+    background-color: #ff5733; /* Opvallende kleur voor de knop */
+    color: white;
+    padding: 10px 20px;
+    border: none; /* Geen randen */
+    border-radius: 5px; /* Afgeronde hoeken */
+    cursor: pointer; /* Wijzigt de muis in een klikhandje */
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #e04b2a; /* Donkerdere tint bij hover */
+}
+
+/* Contactsectie */
+.contact-section {
+    padding: 40px 20px; /* Ruime padding */
+    max-width: 600px;
+    margin: 20px auto; /* Centreert de sectie */
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtiele schaduw */
+    border-radius: 8px; /* Afgeronde hoeken */
+}
+
+.contact-section h2 {
+    margin-bottom: 15px; /* Ruimte onder de kop */
+    text-align: center; /* Centreert de tekst */
+}
+
+/* Contactformulier */
+form label {
+    display: block; /* Zet de label boven het invoerveld */
+    margin-bottom: 5px; /* Ruimte onder het label */
+}
+
+form input,
+form textarea,
+form button {
+    width: 100%; /* Zorgt dat velden de hele breedte gebruiken */
+    padding: 10px; /* Ruimte in de velden */
+    margin-bottom: 15px; /* Ruimte tussen velden */
+    border: 1px solid #ddd; /* Subtiele rand */
+    border-radius: 5px; /* Afgeronde hoeken */
+}
+
+form textarea {
+    height: 150px; /* Specifieke hoogte voor de textarea */
+    resize: vertical; /* Sta resizing alleen verticaal toe */
+}
+
+form button {
+    background-color: #ff5733; /* Opvallende kleur voor verzendknop */
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #e04b2a; /* Donkerder bij hover */
+}
+
+/* Over Ons en Diensten sectie */
+.about-section, .services-section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f9f9f9; /* Zachte achtergrondkleur */
+}
+
+.about-section h2, .services-section h2 {
+    margin-bottom: 15px; /* Ruimte onder de kop */
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Scroll-to-top knop */
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.scroll-to-top:hover {
+    background: #0056b3;
+}
+
+/* Stijl voor actieve navigatielinks */
+nav ul li a.active {
+    background-color: #0056b3;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
